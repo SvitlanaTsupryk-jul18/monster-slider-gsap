@@ -11,22 +11,70 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__logo">Monster</h1>
-    <nav class="nav">
-      <ul class="menu">
-        <li><a class="menu__link" href="#">Photo</a></li>
-        <li><a class="menu__link" href="#">Monsters</a></li>
-        <li><a class="menu__link" href="#">News</a></li>
-        <li><a class="menu__link" href="#">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
+
   <div class="body-wrapper">
+    <header class="header">
+      <h1 class="header__logo">Monster</h1>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a class="menu__link" href="#">Photo</a></li>
+          <li><a class="menu__link" href="#">Monsters</a></li>
+          <li><a class="menu__link" href="#">News</a></li>
+          <li><a class="menu__link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="burger-open js-burger-open burger--visibility">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <section class="wellcome">
+      <div class="slider js-slider">
+        <div class="slider__item">
+          <div class="slider__title">
+            <div class="slider__left">
+              <span>Americos</span>
+              <h2 class="slider__name">George</h2>
+            </div>
 
+          </div>
+          <div class="slider__img">
+            <img src="./assets/monster_01.jpg">
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__title">
+            <div class="slider__left">
+              <span>Niderlands</span>
+              <h2 class="slider__name">Claus</h2>
+            </div>
+
+          </div>
+          <div class="slider__img">
+            <img src="./assets/monster_02.jpg">
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__title">
+            <div class="slider__left">
+              <span>France</span>
+              <h2 class="slider__name">Fluffy</h2>
+            </div>
+          </div>
+          <div class="slider__img">
+            <img src="./assets/monster_03.jpg">
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button type="button" class="slider__btn">❮</button>
+          <button type="button" class="slider__btn">❯</button>
+        </div>
+      </div>
+    </section>
   </div>
-
-  <script src="./scripts.js"></script>
+  <script src="./scripts.js">
+  </script>
 </body>
 
 </html>

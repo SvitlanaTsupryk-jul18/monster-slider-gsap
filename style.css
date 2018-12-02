@@ -12,15 +12,16 @@ a {
     box-sizing: border-box;
 }
 
+
+
 .header {
     background-color: aqua;
     opacity: .9;
     display: flex;
-
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 1em;
+    padding: 1rem;
     align-items: center;
 }
 
@@ -34,7 +35,7 @@ a {
 }
 
 .menu__link {
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     color: gray;
     text-transform: uppercase;
 
@@ -65,5 +66,68 @@ a {
     background-color: grey;
     display: block;
     border-radius: 5px;
+
+}
+
+.wellcome {
+    padding-top: 5rem;
+    height: 100vh;
+}
+
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+.slider__item {
+    display: flex;
+    height: 100%;
+}
+
+.slider__title {
+    flex: 0 0 30%;
+    padding-top: 10%;
+    font-size: 5rem;
+    padding-left: 1rem;
+    color: darkslategray;
+    position: relative;
+}
+
+.slider__left {
+    position: absolute;
+    left: 0;
+}
+
+.slider__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.slider__btn {
+    border: none;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size: 2rem;
+    background-color: lawngreen;
+    margin-right: 3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.slider__btn:hover {
+    transform: scale(1.2);
+}
+
+.slider__btn:first-of-type {
+    background-color: coral;
 
 }
